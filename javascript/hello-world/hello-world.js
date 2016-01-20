@@ -5,11 +5,11 @@
 // expected here.
 
 var HelloWorld = function() {};
-
 HelloWorld.prototype.hello = function(input) {
-//
-// YOUR CODE GOES HERE
-//
+  if(input == ""){
+    return "Hello, World!";
+  }else{
+    return "Hello, " + input + "!";
+  }
 };
-
 module.exports = HelloWorld;
